@@ -1,0 +1,32 @@
+# jemdoc: menu{MENU}{index.html}, nofooter  
+==Zifan Xu 许子凡
+
+~~~
+{}{img_left}{photos/bio1.jpg}{alt text}{131}{160}
+PhD in physics\n 
+University of Texas at Austin\n\n
+2515 Speedway, RLM 12.124 \n
+Austin, Texas, 78712 \n\n 
+E-mail: zfxu \[@\] utexas \[DOT\] edu \n
+Github: [http://github.com/Daffan github.com\/Daffan]
+~~~
+
+== About me
+I am a third-year PhD student in physics at University of Texas at Austin. I am currently seeking a transition to computer science and will graduate with a M.S. degree in physics in Spring 2021. My interests of topics are reinforcement learning, lifelong learning and their applications in robotic. Started from July 2020, I was fortunate to work on some projects at the Learning Agent Research Group (LARG), which is directed by [https://www.cs.utexas.edu/~pstone/ Prof. Peter Stone]. ([projects.html Find details of the projects here]) 
+
+== Research
+My research interests include 
+- Planning and control algorithms for robot manipulation
+- Reinforcement learning
+- Lifelong Learning
+
+=== Publications
+*Computer science* 
+. *Zifan Xu*, Gauraang Dhamankar, Anirudh Nair, Xuesu Xiao, Garrett Warnell, Bo Liu, Zizhao Wang, and Peter Stone. \"APPLR: Adaptive Planner Parameter Learning from Reinforcement\", November 2020. \[[https://arxiv.org/abs/2011.00397 arXiv]\]
+. Harel Yedidsion, Jennifer Suriadinata, *Zifan Xu*, Stefan Debruyn, Peter Stone. \"A Scavenger Hunt for Service Robots\". submitted to International Conference on Robotics and Automation (ICRA)
+. Dawei Liang, *Zifan Xu*, Yinuo Chen, Rebecca Adaimi, Edison Thomaz. \"Smartwatch-Based Foreground Speech Detection in Domestic Environments by Using Generalizable Audio Representations and Speaker Embeddings\". under working
+
+*Physics*
+. Md Hasibul Alam, *Zifan Xu*, Sayema Chowdhury, et al. \"Lithium-ion electrolytic substrates for sub-1V high-performance transition metal dichalcogenide transistors and amplifiers\". Nature Communications, 11(1). [https://www.nature.com/articles/s41467-020-17006-w doi:10.1038/s41467-020-17006-w] (2020)
+. Ryo Noguchi, Masaru Kobayashi, Zhanzhi Jiang, \[et al, including *Zifan Xu*\]. \"Evidence for a higher-order topological insulator in a 3D material built from van der Waals stacking of bismuth-halide chains\", Nature Materials (accepted)
+. Zhaodong Chu, Emma C. Regan, Xuejian Ma, Danqing Wang, *Zifan Xu*, M. Iqbal Bakti Utama, Kentaro Yumigeta, Mark Blei, Kenji Watanabe, Takashi Taniguchi, Sefaattin Tongay, Feng Wang, and Keji Lai, \"Nanoscale Conductivity Imaging of Correlated Electronic States in WSe2\/WS2 Moire Superlattices\", Physical Review Letters 125, 186803, [https://doi.org/10.1103/PhysRevLett.125.186803 doi.org\/10.1103\/PhysRevLett.125.186803] (2020).
