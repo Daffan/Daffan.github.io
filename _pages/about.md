@@ -14,7 +14,7 @@ profile:
 
 news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+social: true  # includes social icons at the bottom of the page
 ---
 
 I am a first year Ph.D. student of Computer Science at University of Texas at Austin. I am very honored to be advised by <a href="https://www.cs.utexas.edu/~pstone/">Prof. Peter Stone</a>. I have general interests in reinforcement learning, lifelong learning, curriculum learning, and their applicaitons in robotic. My primiary focus is to apply deep reinforcement learning for mobile robot autonomous navigation.
