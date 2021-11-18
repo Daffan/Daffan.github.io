@@ -1,8 +1,6 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
 @InProceedings{icra21-xu,
   bibtex_show={true},
   selected={true},
@@ -14,4 +12,36 @@
   year = {2021},
   abstract = {Classical navigation systems typically operate using a fixed set of hand-picked parameters (e.g. maximum speed, sampling rate, inflation radius, etc.) and require heavy expert re-tuning in order to work in new environments. To mitigate this requirement, it has been proposed to learn parameters for different contexts in a new environment using human demonstrations collected via teleoperation. However, learning from human demonstration limits deployment to the training environment, and limits overall performance to that of a potentially-suboptimal demonstrator. In this paper, we introduce APPLR, Adaptive Planner Parameter Learning from Reinforcement, which allows existing navigation systems to adapt to new scenarios by using a parameter selection scheme discovered via reinforcement learning (RL) in a wide variety of simulation environments. We evaluate APPLR on a robot in both simulated and physical experiments, and show that it can outperform both a fixed set of hand-tuned parameters and also a dynamic parameter tuning scheme learned from human demonstration.},
   wwwnote={<a href="https://www.youtube.com/watch?v=JKHTAowdGUk&t=26s">Video presentation</a><br><a href="https://www.cs.utexas.edu/~xiao/Research/APPL/APPL.html">Project webpage</a>}
+}
+
+@InProceedings{ssrr2021-xu,
+  bibtex_show={true},
+  selected={true},
+  author = {Zifan Xu and Xuesu Xiao and Garrett Warnell and Anirudh Nair and Peter Stone},
+  title = {Machine Learning Methods for Local Motion Planning: A Study of End-to-End vs. Parameter Learning},
+  booktitle = {Proceedings of the 2021 IEEE International Symposium on Safety, Security, and Rescue Robotics (SSRR 2021)},
+  location = {New York, USA},
+  month = {October},
+  year = {2021},
+  abstract = {While decades of research efforts have been devoted to developing classical autonomous navigation systems to move robots from one point to another in a collision-free manner, machine learning approaches to navigation have been recently proposed to learn navigation behaviors from data. Two representative paradigms are end-to-end learning (directly from perception to motion) and parameter learning (from perception to parameters used by a classical underlying planner). These two types of methods are believed to have complementary pros and cons: parameter learning is expected to be robust to different scenarios, have provable guarantees, and exhibit explainable behaviors; end-to-end learning does not require extensive engineering and has the potential to outperform approaches that rely on classical systems. However, these beliefs have not been verified through real-world experiments in a comprehensive way. In this paper, we report on an extensive study to compare end-to-end and parameter learning for local motion planners in a large suite of simulated and physical experiments. In particular, we test the performance of end-to-end motion policies, which directly compute raw motor commands, and parameter policies, which compute parameters to be used by classical planners, with different inputs (e.g., raw sensor data, costmaps), and provide an analysis of the results.},
+  wwwnote={<a href="https://www.youtube.com/watch?v=U592HQ30TsY&t=6s">Video presentation</a>}
+}
+
+@inProceedings {ICRA21-Yedidsion,
+  bibtex_show={true},
+  selected={true},
+	author = {Harel Yedidsion and Jennifer Suriadinata and Zifan Xu and Stefan Debruyn and Peter Stone}, 
+	title = {A Scavenger Hunt for Service Robots},
+	booktitle = {Proceedings of the 2021 International Conference on Robotics and Automation (ICRA 2021)},
+	location = {Xi'an China},
+	month = {May},
+	year = {2021},
+	abstract = {
+	Creating robots that can perform general-purpose service tasks in a human-populated environment has been a longstanding grand challenge for AI and Robotics research. 
+	One particularly valuable skill that is relevant to a wide variety of tasks is the ability to locate and retrieve objects upon request. 
+	This paper models this skill as a Scavenger Hunt (SH) game, which we formulate as a variation of the NP-hard stochastic traveling purchaser problem.  In this problem, the goal is to find a set of objects as quickly as possible, given probability distributions of where they may be found.  
+	We investigate the performance of several solution algorithms for the SH problem, both in simulation and on a real mobile robot. We use Reinforcement Learning (RL) to train an agent to plan a minimal cost path, and show that the RL agent can outperform a range of heuristic algorithms, achieving near optimal performance.
+	In order to stimulate research on this problem, we introduce a publicly available software stack and associated website that enable users to upload scavenger hunts which robots can download, perform, and learn from to continually improve their performance on future hunts. 
+	},
+	wwwnote={<a href="http://scavenger-hunt.cs.utexas.edu">Video presentation</a>}
 }
