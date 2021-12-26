@@ -1,9 +1,9 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: Incoming...
-nav: true
+nav: false
 display_categories: [Research]
 horizontal: false
 ---

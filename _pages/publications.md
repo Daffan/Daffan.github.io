@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
-years: [2021]
+title: Publications
+years: [Prep, 2021]
 nav: true
 ---
 
