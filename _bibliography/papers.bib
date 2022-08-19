@@ -1,16 +1,109 @@
 ---
 ---
 
-@Preprint{appl-xiao,
+@article{SES-ZIFAN,
+  bibtex_show={false},
   preprint={true},
-  author = {Xuesu Xiao and Zizhao Wang and Zifan Xu and Bo Liu and Garrett Warnell and Gauraang Dhamankar and Anirudh Nair and and Peter Stone},
-  title = {APPL: Adaptive Planner Parameter Learning},
+  title={Learning Real-world Autonomous Navigation by Self-Supervised Environment Synthesis},
+  author={Zifan Xu and Anirudh Nair and Xuesu Xiao and Peter Stone},
+  year={2022},
+  pdf = {learning_ses.pdf},
+  figure = {ses.png},
+}
+
+@article{DynaBARN-ANI,
+  bibtex_show={false},
+  preprint={true},
+  title={DynaBARN: Benchmarking Metric Ground Navigation in Dynamic Environments},
+  author={Anirudh Nair and Fulin Jiang and Kang Hou and Zifan Xu and Shuozhe Li and Xuesu Xiao and and Peter Stone},
+  year={2022},
+  pdf = {dyna_barn.pdf},
+  figure = {dyna_barn.png},
+}
+
+@article{NavBench-ZIFAN,
+  bibtex_show={false},
+  preprint={true},
+  title={Benchmarking Reinforcement Learning Techniques for Autonomous Navigation},
+  author={Zifan Xu and Bo Liu and Anirudh Nair and Xuesu Xiao and Peter Stone},
+  year={2022},
+  pdf = {navbenchmark.pdf},
+  figure = {navbenchmark.png},
+}
+
+@article{MM-ACL-ZIFAN,
+  bibtex_show={false},
+  preprint={true},
+  title={Model-Based Meta Automatic Curriculum Learning},
+  author={Zifan Xu and Yulin Zhang and Shahaf S. Shperberg and Yuqian Jiang and Reuth Mirsky and Bo Liu and Peter Stone},
+  year={2022},
+  pdf = {MM-ACL-ZIFAN.pdf},
+  figure = {MM-ACL-ZIFAN.png},
+}
+
+@article{ras22-xiao,
+  bibtex_show={true},
+  is_journal={true},
+  title={APPL: Adaptive Planner Parameter Learning},
+  author={Xuesu Xiao and Zizhao Wang and Zifan Xu and Bo Liu and abd Gauraang Dhamankar and Anirudh Nair and Garrett Warnell and Peter Stone},
+  journal={Robotics and Autonomous Systems},
+  abstract={While current autonomous navigation systems allow robots to successfully drive themselves from one point to another in specific environments, they typically require extensive manual parameter re-tuning by human robotics experts in order to function in new environments. Furthermore, even for just one complex environment, a single set of fine-tuned parameters may not work well in different regions of that environment. These problems prohibit reliable mobile robot deployment by non-expert users. As a remedy, we propose Adaptive Planner Parameter Learning (APPL), a machine learning framework that can leverage non-expert human interaction via several modalities â€“ including teleoperated demonstrations, corrective interventions, and evaluative feedback â€“ and also unsupervised reinforcement learning to learn a parameter policy that can dynamically adjust the parameters of classical navigation systems in response to changes in the environment. APPL inherits safety and explainability from classical navigation systems while also enjoying the benefits of machine learning, i.e., the ability to adapt and improve from experience. We present a suite of individual appl methods and also a unifying cycle-oflearning scheme that combines all the proposed methods in a framework that can improve navigation performance through continual, iterative human interaction and simulation training.},
+  year={2022},
   figure = {appl.png},
-  arxiv = {2105.07620},
-  year = {Prep},
-  code = {https://github.com/Daffan/ros_jackal},
-  video = {https://www.youtube.com/watch?v=lykTUU2W-Xo&t=1s},
-  website = {https://www.cs.utexas.edu/users/xiao/Research/APPL/APPL.html}
+  pdf={https://www.cs.utexas.edu/users/pstone/Papers/bib2html-links/ras22-xiao.pdf},
+  month={May}
+}
+
+@InProceedings{DARL22-REUTH,
+  is_other={true},
+  bibtex_show={true},
+  author = {Reuth Mirsky and Shahaf S. Shperberg and Yulin Zhang and Zifan Xu and Yuqian Jiang and Jiaxun Cui and Peter Stone},
+  title = {Task Factorization in Curriculum Learning},
+  booktitle = {Decision Awareness in Reinforcement Learning (DARL) workshop at the 39th International Conference on Machine Learning (ICML)},
+  location = {Baltimore, Maryland, USA},
+  month = {July},
+  year = {2022},
+  figure={DARL22-REUTH.png},
+  pdf = {https://www.cs.utexas.edu/users/pstone/Papers/bib2html-links/DARL22-REUTH.pdf},
+  abstract = {A common challenge for learning when applied to a complex ``target'' task is that learning that task all at once can be too difficult due to inefficient exploration given a sparse reward signal.  Curriculum Learning addresses this challenge by sequencing training tasks for a learner to facilitate gradual learning. One of the crucial steps in finding a suitable curriculum learning approach is to understand the dimensions along which the domain can be factorized. In this paper, we identify different types of factorizations common in the literature of curriculum learning for reinforcement learning tasks: factorizations that involve the agent, the environment, or the mission. For each factorization category, we identify the relevant algorithms and techniques that leverage that factorization and present several case studies to showcase how leveraging an appropriate factorization can boost learning using a simple curriculum.},
+}
+
+@article{GOLD-FACTUAL-LIYAN,
+  is_other={true},
+  bibtex_show={true},
+  author = {Zifan Xu and Liyan Tang},
+  title = {GOLD-FACTUAL: Learning to Generate Faithful Summaries from Models’ Generations},
+  journal = {CS394R Final Project},
+  figure={GOLD-FACTUAL-LIYAN.png},
+  pdf = {GOLD-FACTUAL-LIYAN.pdf},
+}
+
+@InProceedings{DARL22-ZIFAN,
+  is_other={true},
+  bibtex_show={true},
+  author = {Zifan Xu and Yulin Zhang and Shahaf S. Shperberg and Reuth Mirsky and Yulin Zhan and Yuqian Jiang and Bo Liu and Peter Stone},
+  title = {Model-Based Meta Automatic Curriculum Learning},
+  booktitle = {Decision Awareness in Reinforcement Learning (DARL) workshop at the 39th International Conference on Machine Learning (ICML)},
+  location = {Baltimore, Maryland, USA},
+  month = {July},
+  year = {2022},
+  figure = {DARL22-ZIFAN.png},
+  pdf = {https://www.cs.utexas.edu/users/pstone/Papers/bib2html-links/DARL22-ZIFAN.pdf},
+  abstract = {When an agent trains for one target task, its experience is expected to be useful for training on another target task. This paper formulates the meta curriculum learning problem that builds a sequence of intermediate training tasks, called a curriculum, which will assist the learner to train toward any given target task in general. We propose a model-based meta automatic curriculum learning algorithm (MM-ACL) that learns to predict the performance improvement on one task when the policy is trained on another, given contextual information such as the history of training tasks, loss functions, rollout state-action trajectories from the policy, etc. This predictor facilitates the generation of curricula that optimizes the performance of the learner on different target tasks. Our empirical results demonstrate that MM-ACL outperforms a random curriculum, a manually created curriculum, and a commonly used non-stationary bandit algorithm in a GridWorld domain.},
+}
+
+@InProceedings{ICML22-wang,
+  bibtex_show={true},
+  conference={true},
+  author = {Zizhao Wang and Xuesu Xiao and Zifan Xu and Yuke Zhu and Peter Stone},
+  title = {Causal Dynamics Learning for Task-Independent State Abstraction},
+  booktitle = {Proceedings of the 39th International Conference on Machine Learning (ICML2022)},
+  location = {Baltimore, USA},
+  month = {July},
+  year = {2022},
+  figure = {wang-icml22-cdl.png},
+  pdf = {https://www.cs.utexas.edu/users/pstone/Papers/bib2html-links/ICML22-wang.pdf},
+  abstract = {Learning dynamics models accurately is an important goal for Model-Based Reinforcement Learning (MBRL), but most MBRL methods learn a dense dynamics model which is vulnerable to spurious correlations and therefore generalizes poorly to unseen states. In this paper, we introduce Causal Dynamics Learning for Task-Independent State Abstraction (CDL), which first learns a theoretically proved causal dynamics model that removes unnecessary dependencies between state variables and the action, thus generalizing well to unseen states. A state abstraction can then be derived from the learned dynamics, which not only improves sample efficiency but also applies to a wider range of tasks than existing state abstraction methods. Evaluated on two simulated environments and downstream tasks, both the dynamics model and policies learned by the proposed method generalize well to unseen states and the derived state abstraction improves sample efficiency compared to learning without it.},
 }
 
 @InProceedings{icra21-xu,

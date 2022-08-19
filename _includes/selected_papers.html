@@ -2,6 +2,10 @@
   <h2>Publications</h2>
   <h4>Preprint</h4>
   {% bibliography -f papers -q @*[preprint=true]* %}
+  <h4>Journal</h4>
+  {% bibliography -f papers -q @*[is_journal=true]* %}
   <h4>Conference</h4>
   {% bibliography -f papers -q @*[conference=true]* %}
+  <h4>Workshop / Extended Abstract / Technical Report</h4>
+  {% bibliography -f papers -q @*[is_other=true]* %}
 </div>
