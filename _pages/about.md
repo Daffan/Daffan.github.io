@@ -6,7 +6,7 @@ subtitle: <a href="https://www.cs.utexas.edu/~pstone/">LARG</a> | <a href="https
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile_pic.jpg
   image_circular: false # crops the image to make it circular
 
 news: true # includes a list of news items
