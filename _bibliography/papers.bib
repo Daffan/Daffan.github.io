@@ -4,6 +4,78 @@
 # 2: Curriculum Learning for RL
 # 3: LLMs Reasoning
 
+@article{NN23-L2M,
+title="A Domain-Agnostic Approach for Characterization of Lifelong Learning Systems",
+author="Megan M. Baker and Alexander New and Mario Aguilar-Simon and Ziad Al-Halah and
+  S\'ebastien M. R. Arnold and Ese Ben-Iwhiwhu and Andrew P. Brna and Ethan Brooks and Ryan
+  C. Brown and Zachary Daniels and Anurag Daram and Fabien Delattre and Ryan Dellana and Eric
+  Eaton and Haotian Fu and Kristen Grauman and Jesse Hostetler and Shariq Iqbal and Cassandra
+  Kent and Nicholas Ketz and Soheil Kolouri and George Konidaris and Dhireesha Kudithipudi,
+  Erik Learned-Miller and Seungwon Lee and Michael L. Littman and Sandeep Madireddy,
+  Jorge A. Mendez and Eric Q. Nguyen and Christine D. Piatko and Praveen K. Pilly and Aswin
+  Raghavan and Abrar Rahman and Santhosh Kumar Ramakrishnan and Neale Ratzlaff and Andrea
+  Soltoggio and Peter Stone and Indranil Sur and Zhipeng Tang and Saket Tiwari and Kyle
+  Vedder and Felix Wang and Zifan Xu and Angel Yanguas-Gil and Harel Yedidsion and Shangqun
+  Yu and Gautam K. Vallabha",
+journal="Neural Networks",
+year="2023",
+month="March",
+pages="274--96",
+pdf = {https://arxiv.org/pdf/2301.07799.pdf},
+abstract={Despite the advancement of machine learning techniques in
+          recent years, state-of-the-art systems lack robustness to
+          "real world" events, where the input distributions and tasks
+          encountered by the deployed systems will not be limited to
+          the original training context, and systems will instead need
+          to adapt to novel distributions and tasks while
+          deployed. This critical gap may be addressed through the
+          development of "Lifelong Learning" systems that are capable
+          of 1) Continuous Learning, 2) Transfer and Adaptation, and
+          3) Scalability. Unfortunately, efforts to improve these
+          capabilities are typically treated as distinct areas of
+          research that are assessed independently, without regard to
+          the impact of each separate capability on other aspects of
+          the system. We instead propose a holistic approach, using a
+          suite of metrics and an evaluation framework to assess
+          Lifelong Learning in a principled way that is agnostic to
+          specific domains or system techniques. Through five case
+          studies, we show that this suite of metrics can inform the
+          development of varied and complex Lifelong Learning
+          systems. We highlight how the proposed suite of metrics
+          quantifies performance trade-offs present during Lifelong
+          Learning system development - both the widely discussed
+          Stability-Plasticity dilemma and the newly proposed
+          relationship between Sample Efficient and Robust Learning.
+          Further, we make recommendations for the formulation and use
+          of metrics to guide the continuing development of Lifelong
+          Learning systems and assess their progress in the future.},
+wwwnote={Available from <a href="https://arxiv.org/abs/2301.07799">https://arxiv.org/abs/2301.07799</a><br>
+<a href="https://www.sciencedirect.com/science/article/pii/S0893608023000072?dgcid=coauthor" target="_blank">Official version</a> on publisher's website},
+}
+
+@article{ram22-xiao,
+  title={Autonomous Ground Navigation in Highly Constrained Spaces: Lessons Learned From the Benchmark Autonomous Robot Navigation Challenge at ICRA 2022},
+  author={Xuesu Xiao and Zifan Xu and Zizhao Wang and Yunlong Song and Garrett Warnell and Peter Stone and Tingnan Zhang and Shravan Ravi and Gary Wang and Haresh Karnan and Joydeep Biswas and Nicholas Mohammad and Lauren Bramblett and Rahul Peddi and Nicola Bezzo and Zhanteng Xie and Philip Dames},
+  journal={IEEE Robotics \& Automation Magazine},
+  abstract={The BARN (Benchmark Autonomous Robot Navigation) Challenge took place at the 2022 IEEE International Conference on Robotics and Automation (ICRA 2022) in Philadelphia, PA. The aim of the challenge was to evaluate state-of-the-art autonomous ground navigation systems for moving robots through highly constrained environments in a safe and efficient manner. Specifically, the task was to navigate a standardized, differential-drive ground robot from a predefined start location to a goal location as quickly as possible without colliding with any obstacles, both in simulation and in the real world. Five teams from all over the world participated in the qualifying simulation competition, three of which were invited to compete with each other at a set of physical obstacle courses at the conference center in Philadelphia. The competition results suggest that autonomous ground navigation in highly constrained spaces, despite seeming ostensibly simple even for experienced roboticists, is actually far from being a solved problem. In this article, we discuss the challenge, the approaches used by the top three winning teams, and lessons learned to direct future research.},
+  year={2022},
+  month={December},
+  pdf={https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/ram22-xiao.pdf},
+  wwwnote={<a href="https://cs.gmu.edu/~xiao/Research/BARN_Challenge/BARN_Challenge.html">The BARN Challenge Website</a>}
+}
+
+@InProceedings{ssrr2021-xu,
+  author = {Zifan Xu and Xuesu Xiao and Garrett Warnell and Anirudh Nair and Peter Stone},
+  title = {Machine Learning Methods for Local Motion Planning: A Study of End-to-End vs. Parameter Learning},
+  booktitle = {Proceedings of the 2021 IEEE International Symposium on Safety, Security, and Rescue Robotics (SSRR 2021)},
+  location = {New York, USA},
+  month = {October},
+  year = {2021},
+  pdf = {https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/ssrr2021-xu.pdf},
+  abstract = {While decades of research efforts have been devoted to developing classical autonomous navigation systems to move robots from one point to another in a collision-free manner, machine learning approaches to navigation have been recently proposed to learn navigation behaviors from data. Two representative paradigms are end-to-end learning (directly from perception to motion) and parameter learning (from perception to parameters used by a classical underlying planner). These two types of methods are believed to have complementary pros and cons: parameter learning is expected to be robust to different scenarios, have provable guarantees, and exhibit explainable behaviors; end-to-end learning does not require extensive engineering and has the potential to outperform approaches that rely on classical systems. However, these beliefs have not been verified through real-world experiments in a comprehensive way. In this paper, we report on an extensive study to compare end-to-end and parameter learning for local motion planners in a large suite of simulated and physical experiments. In particular, we test the performance of end-to-end motion policies, which directly compute raw motor commands, and parameter policies, which compute parameters to be used by classical planners, with different inputs (e.g., raw sensor data, costmaps), and provide an analysis of the results.},
+  wwwnote={<a href="https://www.youtube.com/watch?v=U592HQ30TsY&t=6s">Video presentation</a>}
+}
+
 @InProceedings{ICLR2024-Xu,
   topic    = {2},
   author   = {Ziping Xu and Zifan Xu and Runxuan Jiang and Peter Stone and Ambuj Tewari},
