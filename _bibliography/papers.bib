@@ -1,93 +1,254 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
-}
-
-@book{einstein1956investigations,
+@InProceedings{ICLR2024-Xu,
+  author   = {Ziping Xu and Zifan Xu and Runxuan Jiang and Peter Stone and Ambuj Tewari},
+  title    = {Sample Efficient Myopic Exploration Through Multitask Reinforcement Learning with Diverse Tasks},
+  booktitle= {Proceedings of the International Conference on Learning Representations (ICLR)},
+  year     = {2024},
+  month    = {May},
+  location = {Vienna, Austria},
+  pdf      = {https://arxiv.org/pdf/2403.01636.pdf},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+  selected = {true},
+  abstract = {Multitask Reinforcement Learning (MTRL) approaches have gained increasing
+attention for its wide applications in many important Reinforcement Learning (RL)
+tasks. However, while recent advancements in MTRL theory have focused on the
+improved statistical efficiency by assuming a shared structure across tasks,
+exploration--a crucial aspect of RL--has been largely overlooked. This paper
+addresses this gap by showing that when an agent is trained on a sufficiently
+diverse set of tasks, a generic policy-sharing algorithm with myopic exploration
+design like $\epsilon$-greedy that are inefficient in general can be
+sample-efficient for MTRL. To the best of our knowledge, this is the first
+theoretical demonstration of the "exploration benefits" of MTRL. It may also shed
+light on the enigmatic success of the wide applications of myopic exploration in
+practice. To validate the role of diversity, we conduct experiments on synthetic
+robotic control environments, where the diverse task set aligns with the task
+selection by automatic curriculum learning, which is empirically shown to improve
+sample-efficiency.
+  },
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
+@InProceedings{ICRA2024-Xu,
+  author   = {Zifan Xu and Amir Hossain Raj and Xuesu Xiao and Peter Stone},
+  title    = {Dexterous Legged Locomotion in Confined 3D Spaces with Reinforcement Learning},
+  booktitle = {Proceedings of the 2024 IEEE International Conference on Robotics and Automation (ICRA)},
+  year     = {2024},
+  month    = {May},
+  location = {Yokohama, Japan},
+  location = {Vienna, Austria},
+  pdf      = {ICRA2024-Xu.pdf},
   bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+  selected = {true},
+  abstract = {Recent advances of locomotion controllers utilizing deep reinforcement learning
+(RL) have yielded impressive results in terms of achieving rapid and robust
+locomotion across challenging terrain, such as rugged rocks, non-rigid ground,
+and slippery surfaces. However, while these controllers primarily address
+challenges underneath the robot, relatively little research has investigated
+legged mobility through confined 3D spaces, such as narrow tunnels or irregular
+voids, which impose all-around constraints. The cyclic gait patterns resulted
+from existing RL-based methods to learn parameterized locomotion skills
+characterized by motion parameters, such as velocity and body height, may not be
+adequate to navigate robots through challenging confined 3D spaces, requiring
+both agile 3D obstacle avoidance and robust legged locomotion. Instead, we
+propose to learn locomotion skills end-to-end from goal-oriented navigation in
+confined 3D spaces. To address the inefficiency of tracking distant navigation
+goals, we introduce a hierarchical locomotion controller that combines a
+classical planner tasked with planning waypoints to reach a faraway global goal
+location, and an RL-based policy trained to follow these waypoints by generating
+low-level motion commands. This approach allows the policy to explore its own
+locomotion skills within the entire solution space and facilitates smooth
+transitions between local goals, enabling long-term navigation towards distant
+goals. In simulation, our hierarchical approach succeeds at navigating through
+demanding confined 3D environments, outperforming both pure end-to-end learning
+approaches and parameterized locomotion skills. We further demonstrate the
+successful real-world deployment of our simulation-trained controller on a real
+robot.
+  },
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
+@inproceedings{IROS2023-Xu,
   bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+  title={Learning Real-world Autonomous Navigation by Self-Supervised Environment Synthesis},
+  author={Zifan Xu and Anirudh Nair and Xuesu Xiao and Peter Stone},
+  booktitle = {First Workshop on Photorealistic Image and Environment Synthesis for Robotics (PIES-Rob) at IROS 2023},
+  location = {Detroit, Michigan, USA},
+  month = {October},
+  year = {2023},
+  pdf = {IROS2023-Xu.pdf},
+  abstract = {
+  Machine learning approaches have recently enabled autonomous navigation for mobile robots in a datadriven manner. Since most existing learning-based navigation systems are trained with data generated in artificially created training environments, during real-world deployment at scale, it is inevitable that robots will encounter unseen scenarios, which are out of the training distribution and therefore lead to poor real-world performance. On the other hand, directly training in the real world is generally unsafe and inefficient. To address this issue, we introduce Self-supervised Environment Synthesis (SES), in which, after real-world deployment with safety and efficiency requirements, autonomous mobile robots can utilize experience from the real-world deployment, reconstruct navigation scenarios, and synthesize representative training environments in simulation. Training in these synthesized environments leads to improved future performance in the real world. The effectiveness of SES at synthesizing representative simulation environments and improving real-world navigation performance is evaluated via a large-scale deployment in a highfidelity, realistic simulator1 and a small-scale deployment on a physical robot.
+  },
+}
+
+@misc{Latent2023-Xu,
+  bibtex_show={true},
+  preprint={true},
+  selected={true},
+  title={Latent Skill Discovery for Chain-of-Thought Reasoning}, 
+  author={Zifan Xu and Haozhu Wang and Dmitriy Bespalov and Peter Stone and Yanjun Qi},
+  year={2024},
+  arxiv={2312.04684},
+  abstract={Recent advances in Large Language Models (LLMs) have led to an emergent ability of chain-of-thought (CoT) prompting, a prompt reasoning strategy that adds intermediate rationale steps between questions and answers to construct prompts. Conditioned on these prompts, LLMs can effectively learn in context to generate rationales that lead to more accurate answers than when answering the same question directly. To design LLM prompts, one important setting, called demonstration selection, considers selecting demonstrations from an example bank. Existing methods use various heuristics for this selection, but for CoT prompting, which involves unique rationales, it is essential to base the selection upon the intrinsic skills that CoT rationales need, for instance, the skills of addition or subtraction for math word problems. To address this requirement, we introduce a novel approach named Reasoning Skill Discovery (RSD) that use unsupervised learning to create a latent space representation of rationales, called a reasoning skill. Simultaneously, RSD learns a reasoning policy to determine the required reasoning skill for a given question. This can then guide the selection of examples that demonstrate the required reasoning skills. Our approach offers several desirable properties: it is (1) theoretically grounded, (2) sample-efficient, requiring no LLM inference or manual prompt design, and (3) LLM-agnostic. Empirically, RSD outperforms existing methods by up to 6% in terms of the answer accuracy across multiple reasoning tasks.},
+}
+
+@article{2023ICRA-Xu,
+  bibtex_show={true},
+  selected={true},
+  title={Benchmarking Reinforcement Learning Techniques for Autonomous Navigation},
+  author={Zifan Xu and Bo Liu and Anirudh Nair and Xuesu Xiao and Peter Stone},
+  journal = {Proceedings of the 2023 IEEE International Conference on Robotics and Automation (ICRA)},
+  location = {London, England},
+  month = {May},
+  year = {2023},
+  pdf = {ICRA2023-Xu.pdf},
+  abstract = {
+Deep reinforcement learning (RL) has brought
+many successes for autonomous robot navigation. However,
+there still exists important limitations that prevent real-world
+use of RL-based navigation systems. For example, most learning
+approaches lack safety guarantees; and learned navigation
+systems may not generalize well to unseen environments.
+Despite a variety of recent learning techniques to tackle these
+challenges in general, a lack of an open-source benchmark
+and reproducible learning methods specifically for autonomous
+navigation makes it difficult for roboticists to choose what
+learning methods to use for their mobile robots and for learning
+researchers to identify current shortcomings of general learning
+methods for autonomous navigation. In this paper, we identify
+four major desiderata of applying deep RL approaches for
+autonomous navigation: (D1) reasoning under uncertainty, (D2)
+safety, (D3) learning from limited trial-and-error data, and (D4)
+generalization to diverse and novel environments. Then, we
+explore four major classes of learning techniques with the
+purpose of achieving one or more of the four desiderata:
+memory-based neural network architectures (D1), safe RL (D2),
+model-based RL (D2, D3), and domain randomization (D4). By
+deploying these learning techniques in a new open-source large-
+scale navigation benchmark and real-world environments, we
+perform a comprehensive study aimed at establishing to what
+extent can these techniques achieve these desiderata for RL-
+based navigation systems
+  },
+}
+
+@InProceedings{CollAs2023-Xu,
+  bibtex_show={true},
+  selected = {true},
+  author = {Zifan Xu and Yulin Zhang and Shahaf S. Shperberg and Reuth Mirsky and Yuqian Jiang and Bo Liu and Peter Stone},
+  title = {Model-Based Meta Automatic Curriculum Learning},
+  booktitle = {The Second Conference on Lifelong Learning Agents (CoLLAs)},
+  location = {Montreal, Canada},
+  month = {August},
+  year = {2023},
+  pdf = {CollAs2023-Xu.pdf},
+  abstract = {
+Curriculum learning (CL) has been widely explored to facilitate the learning of hard-exploration tasks in reinforcement learning (RL) by training a sequence of easier tasks, often called a curriculum. While most curricula are built either manually or automatically based on heuristics, e.g. choosing a training task which is barely beyond the current abilities of the learner, the fact that similar tasks might benefit from similar curricula motivates us to explore meta-learning as a technique for curriculum generation or teaching for a distribution of similar tasks. This paper formulates the meta CL problem that requires a meta-teacher to generate the curriculum which will assist the student to train toward any given target task from a task distribution based on the similarity of these tasks to one another. We propose a model-based meta automatic curriculum learning algorithm (MM-ACL) that learns to predict the performance improvement on one task when the student is trained on another, given the current status of the student. This predictor can then be used to generate the curricula for different target tasks. Our empirical results demonstrate that MM-ACL outperforms the state-of-the-art CL algorithms in a grid-world domain and a more complex visual-based navigation domain in terms of sample efficiency.
+  },
+  video = {<a href="https://utexas.box.com/s/nrb7a5ky4q0ww8aumd42xfpylxgn98or">Video presentation</a>},
+}
+
+@article{SSRR2022-Ani,
+  bibtex_show={true},
+  title={DynaBARN: Benchmarking Metric Ground Navigation in Dynamic Environments},
+  author={Anirudh Nair and Fulin Jiang and Kang Hou and Zifan Xu and Shuozhe Li and Xuesu Xiao and and Peter Stone},
+  journal={International Symposium on Safety, Security, and Rescue Robotics (SSRR)},
+  year={2022},
+  month = {November},
+  location = {Seville, Spain},
+  pdf = {SSRR2022-Ani.pdf},
+}
+
+@InProceedings{ICRA2021-Xu,
+  bibtex_show={true},
+  selected = {true},
+  author = {Zifan Xu and Gauraang Dhamankar and Anirudh Nair and Xuesu Xiao and Garrett Warnell and Bo Liu and Zizhao Wang and Peter Stone},
+  title = {APPLR: Adaptive Planner Parameter Learning from Reinforcement},
+  booktitle = {Proceedings of the 2021 IEEE International Conference on Robotics and Automation (ICRA)},
+  location = {Xi'an, China},
+  month = {June},
+  year = {2021},
+  abstract = {Classical navigation systems typically operate using a fixed set of hand-picked parameters (e.g. maximum speed, sampling rate, inflation radius, etc.) and require heavy expert re-tuning in order to work in new environments. To mitigate this requirement, it has been proposed to learn parameters for different contexts in a new environment using human demonstrations collected via teleoperation. However, learning from human demonstration limits deployment to the training environment, and limits overall performance to that of a potentially-suboptimal demonstrator. In this paper, we introduce APPLR, Adaptive Planner Parameter Learning from Reinforcement, which allows existing navigation systems to adapt to new scenarios by using a parameter selection scheme discovered via reinforcement learning (RL) in a wide variety of simulation environments. We evaluate APPLR on a robot in both simulated and physical experiments, and show that it can outperform both a fixed set of hand-tuned parameters and also a dynamic parameter tuning scheme learned from human demonstration.},
+  code = {https://github.com/Daffan/ros_jackal},
+  video = {https://www.youtube.com/watch?v=JKHTAowdGUk&t=26s},
+  pdf = {https://www.cs.utexas.edu/users/pstone/Papers/bib2html-links/icra21-xu.pdf},
+  slides = {https://www.cs.utexas.edu/users/pstone/Papers/bib2html-links/icra21-xu.slides.pptx},
+  website = {https://www.cs.utexas.edu/users/xiao/Research/APPL/APPL.html}
+}
+
+@article{RAS2022-Xiao,
+  bibtex_show={true},
+  title={APPL: Adaptive Planner Parameter Learning},
+  author={Xuesu Xiao and Zizhao Wang and Zifan Xu and Bo Liu and abd Gauraang Dhamankar and Anirudh Nair and Garrett Warnell and Peter Stone},
+  journal={Robotics and Autonomous Systems},
+  abstract={While current autonomous navigation systems allow robots to successfully drive themselves from one point to another in specific environments, they typically require extensive manual parameter re-tuning by human robotics experts in order to function in new environments. Furthermore, even for just one complex environment, a single set of fine-tuned parameters may not work well in different regions of that environment. These problems prohibit reliable mobile robot deployment by non-expert users. As a remedy, we propose Adaptive Planner Parameter Learning (APPL), a machine learning framework that can leverage non-expert human interaction via several modalities â€“ including teleoperated demonstrations, corrective interventions, and evaluative feedback â€“ and also unsupervised reinforcement learning to learn a parameter policy that can dynamically adjust the parameters of classical navigation systems in response to changes in the environment. APPL inherits safety and explainability from classical navigation systems while also enjoying the benefits of machine learning, i.e., the ability to adapt and improve from experience. We present a suite of individual appl methods and also a unifying cycle-oflearning scheme that combines all the proposed methods in a framework that can improve navigation performance through continual, iterative human interaction and simulation training.},
+  year={2022},
+  pdf={https://www.cs.utexas.edu/users/pstone/Papers/bib2html-links/ras22-xiao.pdf},
+  month={May}
+}
+
+@InProceedings{DARL22-REUTH,
+  bibtex_show={true},
+  author = {Reuth Mirsky and Shahaf S. Shperberg and Yulin Zhang and Zifan Xu and Yuqian Jiang and Jiaxun Cui and Peter Stone},
+  title = {Task Factorization in Curriculum Learning},
+  booktitle = {Decision Awareness in Reinforcement Learning (DARL) workshop at the 39th International Conference on Machine Learning (ICML)},
+  location = {Baltimore, Maryland, USA},
+  month = {July},
+  year = {2022},
+  pdf = {https://www.cs.utexas.edu/users/pstone/Papers/bib2html-links/DARL22-REUTH.pdf},
+  abstract = {A common challenge for learning when applied to a complex ``target'' task is that learning that task all at once can be too difficult due to inefficient exploration given a sparse reward signal.  Curriculum Learning addresses this challenge by sequencing training tasks for a learner to facilitate gradual learning. One of the crucial steps in finding a suitable curriculum learning approach is to understand the dimensions along which the domain can be factorized. In this paper, we identify different types of factorizations common in the literature of curriculum learning for reinforcement learning tasks: factorizations that involve the agent, the environment, or the mission. For each factorization category, we identify the relevant algorithms and techniques that leverage that factorization and present several case studies to showcase how leveraging an appropriate factorization can boost learning using a simple curriculum.},
+}
+
+@article{GOLD-FACTUAL-LIYAN,
+  bibtex_show={true},
+  author = {Zifan Xu and Liyan Tang},
+  title = {GOLD-FACTUAL: Learning to Generate Faithful Summaries from Models’ Generations},
+  journal = {CS394R Final Project},
+  pdf = {GOLD-FACTUAL-LIYAN.pdf},
+  year = {2021},
+}
+
+@InProceedings{DARL22-ZIFAN,
+  bibtex_show={true},
+  author = {Zifan Xu and Yulin Zhang and Shahaf S. Shperberg and Reuth Mirsky and Yulin Zhan and Yuqian Jiang and Bo Liu and Peter Stone},
+  title = {Model-Based Meta Automatic Curriculum Learning},
+  booktitle = {Decision Awareness in Reinforcement Learning (DARL) workshop at the 39th International Conference on Machine Learning (ICML)},
+  location = {Baltimore, Maryland, USA},
+  month = {July},
+  year = {2022},
+  pdf = {https://www.cs.utexas.edu/users/pstone/Papers/bib2html-links/DARL22-ZIFAN.pdf},
+  abstract = {When an agent trains for one target task, its experience is expected to be useful for training on another target task. This paper formulates the meta curriculum learning problem that builds a sequence of intermediate training tasks, called a curriculum, which will assist the learner to train toward any given target task in general. We propose a model-based meta automatic curriculum learning algorithm (MM-ACL) that learns to predict the performance improvement on one task when the policy is trained on another, given contextual information such as the history of training tasks, loss functions, rollout state-action trajectories from the policy, etc. This predictor facilitates the generation of curricula that optimizes the performance of the learner on different target tasks. Our empirical results demonstrate that MM-ACL outperforms a random curriculum, a manually created curriculum, and a commonly used non-stationary bandit algorithm in a GridWorld domain.},
+}
+
+@InProceedings{ICML22-wang,
+  bibtex_show={true},
+  author = {Zizhao Wang and Xuesu Xiao and Zifan Xu and Yuke Zhu and Peter Stone},
+  title = {Causal Dynamics Learning for Task-Independent State Abstraction},
+  booktitle = {Proceedings of the 39th International Conference on Machine Learning (ICML2022)},
+  location = {Baltimore, USA},
+  month = {July},
+  year = {2022},
+  pdf = {https://www.cs.utexas.edu/users/pstone/Papers/bib2html-links/ICML22-wang.pdf},
+  abstract = {Learning dynamics models accurately is an important goal for Model-Based Reinforcement Learning (MBRL), but most MBRL methods learn a dense dynamics model which is vulnerable to spurious correlations and therefore generalizes poorly to unseen states. In this paper, we introduce Causal Dynamics Learning for Task-Independent State Abstraction (CDL), which first learns a theoretically proved causal dynamics model that removes unnecessary dependencies between state variables and the action, thus generalizing well to unseen states. A state abstraction can then be derived from the learned dynamics, which not only improves sample efficiency but also applies to a wider range of tasks than existing state abstraction methods. Evaluated on two simulated environments and downstream tasks, both the dynamics model and policies learned by the proposed method generalize well to unseen states and the derived state abstraction improves sample efficiency compared to learning without it.},
+}
+
+@inProceedings {ICRA21-Yedidsion,
+  bibtex_show={true},
+	author = {Harel Yedidsion and Jennifer Suriadinata and Zifan Xu and Stefan Debruyn and Peter Stone}, 
+	title = {A Scavenger Hunt for Service Robots},
+	booktitle = {Proceedings of the 2021 International Conference on Robotics and Automation (ICRA)},
+	location = {Xi'an China},
+	month = {May},
+	year = {2021},
+	abstract = {
+	Creating robots that can perform general-purpose service tasks in a human-populated environment has been a longstanding grand challenge for AI and Robotics research. 
+	One particularly valuable skill that is relevant to a wide variety of tasks is the ability to locate and retrieve objects upon request. 
+	This paper models this skill as a Scavenger Hunt (SH) game, which we formulate as a variation of the NP-hard stochastic traveling purchaser problem.  In this problem, the goal is to find a set of objects as quickly as possible, given probability distributions of where they may be found.  
+	We investigate the performance of several solution algorithms for the SH problem, both in simulation and on a real mobile robot. We use Reinforcement Learning (RL) to train an agent to plan a minimal cost path, and show that the RL agent can outperform a range of heuristic algorithms, achieving near optimal performance.
+	In order to stimulate research on this problem, we introduce a publicly available software stack and associated website that enable users to upload scavenger hunts which robots can download, perform, and learn from to continually improve their performance on future hunts. 
+	},
+  code = {https://github.com/Daffan/scavenger_hunt_sim},
+  video = {http://scavenger-hunt.cs.utexas.edu/},
+  pdf = {https://www.cs.utexas.edu/users/pstone/Papers/bib2html-links/ICRA21-Yedidsion.pdf},
+  website = {http://scavenger-hunt.cs.utexas.edu/}
 }
