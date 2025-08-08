@@ -369,3 +369,66 @@ Curriculum learning (CL) has been widely explored to facilitate the learning of 
   pdf = {https://www.cs.utexas.edu/users/pstone/Papers/bib2html-links/ICRA21-Yedidsion.pdf},
   website = {http://scavenger-hunt.cs.utexas.edu/}
 }
+
+@InProceedings{viraj_joshi_rlc2025,
+  topic    = {2},
+  author   = {Viraj Joshi and Zifan Xu and Bo Liu and Peter Stone and Amy Zhang},
+  title    = {Benchmarking Massively Parallelized Multi-Task Reinforcement Learning for Robotics Tasks},
+  booktitle = {Reinforcement Learning Conference (RLC)},
+  year     = {2025},
+  month    = {August},
+  location = {Edmonton, Canada},
+  abstract = {Multi-task Reinforcement Learning (MTRL) has emerged as a critical training
+paradigm for applying reinforcement learning (RL) to a set of complex real-world
+robotic tasks, which demands a generalizable and robust policy. At the same time,
+massively parallelized training has gained popularity, not only for significantly
+accelerating data collection through GPU-accelerated simulation but also for
+enabling diverse data collection across multiple tasks by simulating
+heterogeneous scenes in parallel. However, existing MTRL research has largely
+been limited to off-policy methods like SAC in the low-parallelization regime.
+MTRL could capitalize on the higher asymptotic performance of on-policy
+algorithms, whose batches require data from the current policy, and as a result,
+take advantage of massive parallelization offered by GPU-accelerated simulation.
+To bridge this gap, we introduce a massively parallelized Multi-Task Benchmark
+for robotics (MTBench), an open-sourced benchmark featuring a broad distribution
+of 50 manipulation tasks and 20 locomotion tasks, implemented using the
+GPU-accelerated simulator IsaacGym. MTBench also includes four base RL algorithms
+combined with seven state-of-the-art MTRL algorithms and architectures, providing
+a unified framework for evaluating their performance. Our extensive experiments
+highlight the superior speed of evaluating MTRL approaches using MTBench, while
+also uncovering unique challenges that arise from combining massive parallelism
+with MTRL. Code is available at https://github.com/Viraj-Joshi/MTBench.
+  },
+  pdf = {https://www.arxiv.org/pdf/2507.23172},
+  code = {https://github.com/Viraj-Joshi/MTBench},
+}
+
+@InProceedings{linji_wang_iros2025,
+  topic    = {1},
+  author   = {Linji Wang and Zifan Xu and Peter Stone and Xuesu Xiao},
+  title    = {GACL: Grounded Adaptive Curriculum Learning with Active Task and Performance Monitoring},
+  booktitle = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year     = {2025},
+  month    = {October},
+  location = {Hangzhou, China},
+  abstract = {Curriculum learning has emerged as a promising approach for training complex
+robotics tasks, yet current applications predominantly rely on manually designed
+curricula, which demand significant engineering effort and can suffer from
+subjective and suboptimal human design choices. While automated curriculum
+learning has shown success in simple domains like grid worlds and games where
+task distributions can be easily specified, robotics tasks present unique
+challenges: they require handling complex task spaces while maintaining relevance
+to target domain distributions that are only partially known through limited
+samples. To this end, we propose Grounded Adaptive Curriculum Learning (GACL), a
+framework specifically designed for robotics curriculum learning with three key
+innovations: (1) a task representation that consistently handles complex robot
+task design, (2) an active performance tracking mechanism that allows adaptive
+curriculum generation appropriate for the robot's current capabilities, and (3) a
+grounding approach that maintains target domain relevance through alternating
+sampling between reference and synthetic tasks. We validate GACL on wheeled
+navigation in constrained environments and quadruped locomotion in challenging 3D
+confined spaces, achieving 6.8% and 6.1% higher success rates, respectively, than
+state-of-the-art methods in each domain.
+  },
+  pdf = {https://arxiv.org/pdf/2409.19816},
+}
