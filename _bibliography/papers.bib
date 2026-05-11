@@ -1,8 +1,75 @@
 ---
 ---
 # 1: RL for Robotics
-# 2: Curriculum Learning for RL
+# 2: Large-Scale RL
 # 3: LLMs Reasoning
+
+@article{ExpertGen2026-Xu,
+  topic    = {2},
+  bibtex_show={true},
+  selected = {true},
+  author   = {Zifan Xu and Ran Gong and Maria Vittoria Minniti and Ahmet Salih Gundogdu and Eric Rosen and Kausik Sivakumar and Riedana Yan and Zixing Wang and Di Deng and Peter Stone and Xiaohan Zhang and Karl Schmeckpeper},
+  title    = {ExpertGen: Scalable Sim-to-Real Expert Policy Learning from Imperfect Behavior Priors},
+  journal  = {arXiv preprint arXiv:2603.15956},
+  year     = {2026},
+  month    = {March},
+  abstract = {Learning generalizable and robust behavior cloning policies requires large volumes
+of high-quality robotics data. While human demonstrations (e.g., through
+teleoperation) serve as the standard source for expert behaviors, acquiring such
+data at scale in the real world is prohibitively expensive. This paper introduces
+ExpertGen, a framework that automates expert policy learning in simulation to
+enable scalable sim-to-real transfer. ExpertGen first initializes a behavior
+prior using a diffusion policy trained on imperfect demonstrations, which may be
+synthesized by large language models or provided by humans. Reinforcement
+learning is then used to steer this prior toward high task success by optimizing
+the diffusion model's initial noise while keep original policy frozen. By keeping
+the pretrained diffusion policy frozen, ExpertGen regularizes exploration to
+remain within safe, human-like behavior manifolds, while also enabling effective
+learning with only sparse rewards. Empirical evaluations on challenging
+manipulation benchmarks demonstrate that ExpertGen reliably produces high-quality
+expert policies with no reward engineering. On industrial assembly tasks,
+ExpertGen achieves a 90.5% overall success rate, while on long-horizon
+manipulation tasks it attains 85% overall success, outperforming all baseline
+methods. The resulting policies exhibit dexterous control and remain robust
+across diverse initial configurations and failure states. To validate sim-to-real
+transfer, the learned state-based expert policies are further distilled into
+visuomotor policies via DAgger and successfully deployed on real robotic hardware.
+  },
+  pdf      = {https://arxiv.org/pdf/2603.15956},
+  arxiv    = {2603.15956},
+  website  = {https://pages.rai-inst.com/expertgen/},
+}
+
+@InProceedings{ICRA2026-Xu,
+  topic    = {1},
+  bibtex_show={true},
+  selected = {true},
+  author   = {Zifan Xu and Myoungkyu Seo and Dongmyeong Lee and Hao Fu and Jiaheng Hu and Jiaxun Cui and Yuqian Jiang and Zhihan Wang and Anastasiia Brund and Joydeep Biswas and Peter Stone},
+  title    = {Learning Agile Striker Skills for Humanoid Soccer Robots from Noisy Sensory Input},
+  booktitle = {Proceedings of the 2026 IEEE International Conference on Robotics and Automation (ICRA)},
+  year     = {2026},
+  month    = {May},
+  abstract = {Learning fast and robust ball-kicking skills is a critical capability for humanoid
+soccer robots, yet it remains a challenging problem due to the need for rapid leg
+swings, postural stability on a single support foot, and robustness under noisy
+sensory input and external perturbations (e.g., opponents). This paper presents a
+reinforcement learning (RL)-based training pipeline that enables humanoid robots
+to execute robust continual ball-kicking with adaptability to different ball-goal
+configurations. The pipeline extends a typical teacher-student training
+framework---in which a teacher policy is trained with ground truth state
+information and the student learns to mimic it with noisy, imperfect sensing---by
+including four training stages: (1) long-distance ball chasing (teacher); (2)
+directional kicking (teacher); (3) teacher policy distillation (student); and (4)
+student adaptation and refinement (student). Key design elements---including
+tailored reward functions, realistic noise modeling, and online constrained RL
+for adaptation and refinement---are critical for closing the sim-to-real gap and
+sustaining performance under perceptual uncertainty.
+  },
+  pdf      = {https://arxiv.org/pdf/2512.06571},
+  arxiv    = {2512.06571},
+  code     = {https://github.com/Daffan/humanoid-soccer},
+  website  = {https://humanoidsoccer.github.io},
+}
 
 @article{NN23-L2M,
 title="A Domain-Agnostic Approach for Characterization of Lifelong Learning Systems",

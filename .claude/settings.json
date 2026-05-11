@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n \"bibtex\\\\|@\\\\|cite\" /Users/zifan/work/repos/humanoidsoccer.github.io/index.html | head -40)",
+      "Read(//Users/zifan/work/repos/humanoidsoccer.github.io/**)",
+      "WebFetch(domain:arxiv.org)",
+      "Read(//Users/zifan/.docker/**)",
+      "Bash(docker-compose down *)",
+      "Bash(docker run *)",
+      "Bash(docker-compose build *)",
+      "Bash(docker-compose up *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080)",
+      "Bash(docker-compose logs *)",
+      "Bash(git check-ignore *)"
+    ]
+  }
+}

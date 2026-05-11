@@ -1,4 +1,5 @@
 _site
+LOCAL_NOTES.md
 .bundle
 .sass-cache
 .jekyll-cache
