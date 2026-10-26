@@ -14,7 +14,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am a last-year Ph.D. candidate in Computer Science at University of Texas at Austin. I am very honored to be advised by <a href="https://www.cs.utexas.edu/~pstone/">Prof. Peter Stone</a>. I have general interests in reinforcement learning, multitask learning, curriculum learning, and their applicaitons in robotics. My primiary focus is to apply deep reinforcement learning for learning agile and diverse motor skills for humanoid robots and mobile navigation system. 
+I am a last-year Ph.D. candidate in Computer Science at University of Texas at Austin. I am very honored to be advised by <a href="https://www.cs.utexas.edu/~pstone/">Prof. Peter Stone</a>. I have general interests in reinforcement learning, multitask learning, curriculum learning, and their applicaitons in robotics. My primiary focus is to apply deep reinforcement learning for learning agile and diverse motor skills for humanoid robots and mobile navigation system. I lead <a href="https://www.cs.utexas.edu/~AustinVilla/humanoid/">UT Austin Villa</a>, the humanoid soccer team at the University of Texas at Austin.
 
 <strong>I am currently on the job market, seeking roles in reinforcement learning engineering, humanoid whole-body control, and reinforcement learning post-training for vision-language-action (VLA) models and world models (WM).</strong>
 
